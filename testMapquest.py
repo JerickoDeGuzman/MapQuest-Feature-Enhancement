@@ -20,6 +20,7 @@ testMilesToKm = {
 }
 
 class TestMapquest(unittest.TestCase):
+    # Flask App Setup for test usage
     def setUp(self):
         app.testing = True
         self.app = app.test_client()
@@ -33,7 +34,6 @@ class TestMapquest(unittest.TestCase):
     # Tests if the content type returned is text/html; charset=utf-8 (index.html)
     def testContentType(self):
         rv = self.app.get('/')
-        statusCode = rv.status_code
         self.assertEqual(rv.content_type, "text/html; charset=utf-8")
     
     # Tests the Post Method if returns HTTP - 200 (Success Status)
