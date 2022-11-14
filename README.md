@@ -20,3 +20,24 @@ Your manager would also like a list of other enhancements for a future revision.
 <br>
 Note: You will be using the final code from the lab, "Integrate a REST API in a Python Application". In this lab, you used the MapQuest directions API to retrieve JSON data, parsed the data and formatted it for the user.
 </br>
+
+## CPE028/CPE41S4 - Breakout Room Activity 9.1
+###  Automated Software Testing and Deployment
+
+#### Team (Agile) Members:
+* Atabay, FJ Vincent
+* De Guzman, Jericko
+
+<br>The marketing department has received very favorable reviews and feedback about your application. Your manager has acquired funding and resources for your team to add some of the backlog features to your application.</br>
+
+<br>As your team continues working on the code, each team member contributes to your shared application codebase on GitHub with their changes. Despite the fact that you are trying to do doing manual code reviews for each commit, or pull request, sometimes a team member’s change will break some functionality in the application. Many times, such issues are identified only when the application is deployed and running. This usually leads to long troubleshooting sessions and slows down the development.</br>
+
+<br>To eliminate the issues from above and ease development, your team has been asked to use some of the best practices from the DevOps methodology. Design a testing process that would be triggered automatically by GitHub whenever there is a new commit to the codebase. Only if all the test cases are passed, can the committed change be merged, or further used. Your manager has recommended that, in addition to Jenkins, explore other CI/CD tools like GitHub Actions, CircleCI, etc., that might help you to build this automated CI/CD pipeline.</br>
+
+<br>Actions Done:</br>
+* Created a bash script that generates a Dockerfile containing the resources that MapQuest App needs.
+* Implemented one backlog (chained dropdown options for starting and destination location for specifying the country/state).
+* Created a testing script to ensure that the application is working as intended.
+* Created build and test jobs in Jenkins.
+* Utilized the created build and test jobs to create a pipeline in Jenkins.
+* Configured the pipeline such that every change (push) in the GitHub Main Repository is reflected on the deployed application inside the Jenkins server running locally.
